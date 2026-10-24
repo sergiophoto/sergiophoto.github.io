@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>Bisonte Firenze - Millenium Brescia</title>
+
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      background-color: #000;
+      color: #fff;
+      font-family: 'Poppins', sans-serif;
+      overflow-x: hidden;
+      user-select: none;
+      -webkit-user-select: none;
+      touch-action: none;
+    }
+
+    /* Titolo */
+    .page-title {
+      text-align: center;
+      font-size: 1.8rem;
+      font-weight: 300;
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+      letter-spacing: 1px;
+    }
+
+    /* Logo */
+    .main-logo {
+      display: block;
+      margin: 0 auto;
+      width: 180px;
+      opacity: 0.9;
+      margin-bottom: 2rem;
+      pointer-events: none;
+      user-select: none;
+    }
+
+    /* Loader */
+    #loader {
+      position: fixed;
+      inset: 0;
+      background: #000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 9999;
+      transition: opacity 1s ease;
+    }
+
+    #loader.loaded {
+      animation: loaderFadeOut 1s ease forwards;
+    }
+
+    @keyframes loaderFadeOut {
+      to { opacity: 0; visibility: hidden; }
+    }
+
+    .loader-logo {
+      width: 150px;
+      opacity: 0;
+      animation: fadeIn 1.5s ease forwards;
+      pointer-events: none;
+      user-select: none;
+    }
+
+    @keyframes fadeIn {
+      to { opacity: 1; }
+    }
+
+    /* Gallery masonry */
+    .gallery {
+      column-count: 3;
+      column-gap: 1rem;
+      padding: 2rem;
+    }
+
+    .photo {
+      position: relative;
+      break-inside: avoid;
+      margin-bottom: 1rem;
+    }
+
+    /* Migliore gestione foto verticali */
+    .photo img:first-child {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 4px;
+    pointer-events: none;
+    user-select: none;
+}
+
+    /* Watermark centrato */
+    .watermark {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: min(200px, 35%);
+  opacity: 0.35;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  user-select: none;
+}
+@media (max-width: 768px) {
+
+.gallery { column-count: 2; padding: 1rem; }
+
+.main-logo { margin-bottom: 1rem; }
+
+.page-title { font-size: 1.2rem; padding: 0 10px; }
+
+.watermark { width: min(120px, 30%); }
+
+}
+
+@media (max-width: 480px) {
+
+.gallery { column-count: 1; }
+
+.watermark { width: min(100px, 25%); }
+
+}  
+</style>
+</head>
+
+<body>
+
+  <!-- Loader -->
+  <div id="loader">
+    <img src="images/sir_gio_photo_loader.png" class="loader-logo" alt="logo loader">
+  </div>
+
+  <!-- Titolo -->
+  <h1 class="page-title">Bisonte Firenze - Millenium Brescia</h1>
+
+  <!-- Logo principale -->
+  <img src="images/sir_gio_photo_loader.png" class="main-logo" alt="logo principale">
+
+  <!-- Gallery -->
+  <div class="gallery">
+<div class="photo"><img src="images/_DSC4897.jpg"><img src="images/sir_gio_photo_loader.png" class="watermark"></div>
+<div class="photo"><img src="images/_DSC4903.jpg"><img src="images/sir_gio_photo_loader.png" class="watermark"></div>
+<div class="photo"><img src="images/_DSC4904.jpg"><img src="images/sir_gio_photo_loader.png" class="watermark"></div>
+<div class="photo"><img src="images/_DSC4918.jpg"><img src="images/sir_gio_photo_loader.png" class="watermark"></div>
+
+<div class="photo"><img src="images/_DSC4941.jpg"><img src="images/sir_gio_photo_loader.png" class="watermark"></div>
+<div class="photo"><img src="images/_DSC5009.jpg"><img src="images/sir_gio_photo_loader.png" class="watermark"></div>
+<div class="photo"><img src="images/_DSC5097.jpg"><img src="images/sir_gio_photo_loader.png" class="watermark"></div>
+<div class="photo"><img src="images/_DSC5102.jpg"><img src="images/sir_gio_photo_loader.png" class="watermark"></div>
+<div class="photo"><img src="images/_DSC5106.jpg"><img src="images/sir_gio_photo_loader.png" class="watermark"></div>
+<div class="photo"><img src="images/_DSC5124.jpg"><img src="images/sir_gio_photo_loader.png" class="watermark"></div>
+<div class="photo"><img src="images/_DSC5145.jpg"><img src="images/sir_gio_photo_loader.png" class="watermark"></div>
+<div class="photo"><img src="images/_DSC5177.jpg"><img src="images/sir_gio_photo_loader.png" class="watermark"></div>
+
+<div class="photo"><img src="images/_DSC5314.jpg"><img src="images/sir_gio_photo_loader.png" class="watermark"></div>
+<div class="photo"><img src="images/_DSC5350.jpg"><img src="images/sir_gio_photo_loader.png" class="watermark"></div>
+<div class="photo"><img src="images/_DSC5405.jpg"><img src="images/sir_gio_photo_loader.png" class="watermark"></div>
+<div class="photo"><img src="images/_DSC5451.jpg"><img src="images/sir_gio_photo_loader.png" class="watermark"></div>
+<div class="photo"><img src="images/_DSC5468.jpg"><img src="images/sir_gio_photo_loader.png" class="watermark"></div>
+<div class="photo"><img src="images/_DSC5526.jpg"><img src="images/sir_gio_photo_loader.png" class="watermark"></div>
+<div class="photo"><img src="images/_DSC5555.jpg"><img src="images/sir_gio_photo_loader.png" class="watermark"></div>
+<div class="photo"><img src="images/_DSC5563.jpg"><img src="images/sir_gio_photo_loader.png" class="watermark"></div>
+<div class="photo"><img src="images/_DSC5571.jpg"><img src="images/sir_gio_photo_loader.png" class="watermark"></div>
+<div class="photo"><img src="images/_DSC5579.jpg"><img src="images/sir_gio_photo_loader.png" class="watermark"></div>
+<div class="photo"><img src="images/_DSC5589.jpg"><img src="images/sir_gio_photo_loader.png" class="watermark"></div>
+
+<div class="photo"><img src="images/_DSC5630.jpg"><img src="images/sir_gio_photo_loader.png" class="watermark"></div>
+<div class="photo"><img src="images/_DSC5646.jpg"><img src="images/sir_gio_photo_loader.png" class="watermark"></div>
+<div class="photo"><img src="images/_DSC5651.jpg"><img src="images/sir_gio_photo_loader.png" class="watermark"></div>
+<div class="photo"><img src="images/_DSC5659.jpg"><img src="images/sir_gio_photo_loader.png" class="watermark"></div>
+<div class="photo"><img src="images/_DSC5674.jpg"><img src="images/sir_gio_photo_loader.png" class="watermark"></div>
+
+<div class="photo"><img src="images/_DSC5774.jpg"><img src="images/sir_gio_photo_loader.png" class="watermark"></div>
+<div class="photo"><img src="images/_DSC5776.jpg"><img src="images/sir_gio_photo_loader.png" class="watermark"></div>
+<div class="photo"><img src="images/_DSC5809.jpg"><img src="images/sir_gio_photo_loader.png" class="watermark"></div>
+<div class="photo"><img src="images/_DSC5819.jpg"><img src="images/sir_gio_photo_loader.png" class="watermark"></div>
+<div class="photo"><img src="images/_DSC5822.jpg"><img src="images/sir_gio_photo_loader.png" class="watermark"></div>
+
+<div class="photo"><img src="images/_DSC5921.jpg"><img src="images/sir_gio_photo_loader.png" class="watermark"></div>
+<div class="photo"><img src="images/_DSC5926.jpg"><img src="images/sir_gio_photo_loader.png" class="watermark"></div>
+<div class="photo"><img src="images/_DSC5927.jpg"><img src="images/sir_gio_photo_loader.png" class="watermark"></div>
+<div class="photo"><img src="images/_DSC5952.jpg"><img src="images/sir_gio_photo_loader.png" class="watermark"></div>
+
+<div class="photo"><img src="images/_DSC6009.jpg"><img src="images/sir_gio_photo_loader.png" class="watermark"></div>
+<div class="photo"><img src="images/_DSC6019.jpg"><img src="images/sir_gio_photo_loader.png" class="watermark"></div>
+<div class="photo"><img src="images/_DSC6043.jpg"><img src="images/sir_gio_photo_loader.png" class="watermark"></div>
+<div class="photo"><img src="images/_DSC6050.jpg"><img src="images/sir_gio_photo_loader.png" class="watermark"></div>
+
+<div class="photo"><img src="images/_DSC6134.jpg"><img src="images/sir_gio_photo_loader.png" class="watermark"></div>
+<div class="photo"><img src="images/_DSC6157.jpg"><img src="images/sir_gio_photo_loader.png" class="watermark"></div>
+<div class="photo"><img src="images/_DSC6159.jpg"><img src="images/sir_gio_photo_loader.png" class="watermark"></div>
+<div class="photo"><img src="images/_DSC6164.jpg"><img src="images/sir_gio_photo_loader.png" class="watermark"></div>
+
+<div class="photo"><img src="images/_DSC6183.jpg"><img src="images/sir_gio_photo_loader.png" class="watermark"></div>
+<div class="photo"><img src="images/_DSC6214.jpg"><img src="images/sir_gio_photo_loader.png" class="watermark"></div>
+<div class="photo"><img src="images/_DSC6218.jpg"><img src="images/sir_gio_photo_loader.png" class="watermark"></div>
+<div class="photo"><img src="images/_DSC6220.jpg"><img src="images/sir_gio_photo_loader.png" class="watermark"></div>
+<div class="photo"><img src="images/_DSC6246.jpg"><img src="images/sir_gio_photo_loader.png" class="watermark"></div>
+<div class="photo"><img src="images/_DSC6247.jpg"><img src="images/sir_gio_photo_loader.png" class="watermark"></div>
+
+<div class="photo"><img src="images/_DSC6389.jpg"><img src="images/sir_gio_photo_loader.png" class="watermark"></div>
+<div class="photo"><img src="images/_DSC6415.jpg"><img src="images/sir_gio_photo_loader.png" class="watermark"></div>
+<div class="photo"><img src="images/_DSC6426.jpg"><img src="images/sir_gio_photo_loader.png" class="watermark"></div>
+<div class="photo"><img src="images/_DSC6444.jpg"><img src="images/sir_gio_photo_loader.png" class="watermark"></div>
+<div class="photo"><img src="images/_DSC6457.jpg"><img src="images/sir_gio_photo_loader.png" class="watermark"></div>
+
+<div class="photo"><img src="images/_DSC6548.jpg"><img src="images/sir_gio_photo_loader.png" class="watermark"></div>
+<div class="photo"><img src="images/_DSC6697.jpg"><img src="images/sir_gio_photo_loader.png" class="watermark"></div>
+<div class="photo"><img src="images/_DSC6799.jpg"><img src="images/sir_gio_photo_loader.png" class="watermark"></div>
+<div class="photo"><img src="images/_DSC6821.jpg"><img src="images/sir_gio_photo_loader.png" class="watermark"></div>
+<div class="photo"><img src="images/_DSC6838.jpg"><img src="images/sir_gio_photo_loader.png" class="watermark"></div>
+<div class="photo"><img src="images/_DSC6862.jpg"><img src="images/sir_gio_photo_loader.png" class="watermark"></div>
+<div class="photo"><img src="images/_DSC6878.jpg"><img src="images/sir_gio_photo_loader.png" class="watermark"></div>
+
+<div class="photo"><img src="images/_DSC6982.jpg"><img src="images/sir_gio_photo_loader.png" class="watermark"></div>
+<div class="photo"><img src="images/_DSC6960.jpg"><img src="images/sir_gio_photo_loader.png" class="watermark"></div>
+<div class="photo"><img src="images/_DSC7090.jpg"><img src="images/sir_gio_photo_loader.png" class="watermark"></div>
+<div class="photo"><img src="images/_DSC7119.jpg"><img src="images/sir_gio_photo_loader.png" class="watermark"></div>
+<div class="photo"><img src="images/_DSC7128.jpg"><img src="images/sir_gio_photo_loader.png" class="watermark"></div>
+
+<div class="photo"><img src="images/_DSC7491.jpg"><img src="images/sir_gio_photo_loader.png" class="watermark"></div>
+<div class="photo"><img src="images/_DSC7508.jpg"><img src="images/sir_gio_photo_loader.png" class="watermark"></div>
+<div class="photo"><img src="images/_DSC7519.jpg"><img src="images/sir_gio_photo_loader.png" class="watermark"></div>
+<div class="photo"><img src="images/_DSC7600.jpg"><img src="images/sir_gio_photo_loader.png" class="watermark"></div>
+<div class="photo"><img src="images/_DSC7614.jpg"><img src="images/sir_gio_photo_loader.png" class="watermark"></div>
+<div class="photo"><img src="images/_DSC7692.jpg"><img src="images/sir_gio_photo_loader.png" class="watermark"></div>
+
+<div class="photo"><img src="images/_DSC7804.jpg"><img src="images/sir_gio_photo_loader.png" class="watermark"></div>
+<div class="photo"><img src="images/_DSC7806.jpg"><img src="images/sir_gio_photo_loader.png" class="watermark"></div>
+<div class="photo"><img src="images/_DSC7813.jpg"><img src="images/sir_gio_photo_loader.png" class="watermark"></div>
+<div class="photo"><img src="images/_DSC7821.jpg"><img src="images/sir_gio_photo_loader.png" class="watermark"></div>
+<div class="photo"><img src="images/_DSC7844.jpg"><img src="images/sir_gio_photo_loader.png" class="watermark"></div>
+  </div>
+
+  <script>
+    window.addEventListener('load', () => {
+      document.getElementById('loader').classList.add('loaded');
+    });
+  </script>
+
+</body>
+</html>
+
